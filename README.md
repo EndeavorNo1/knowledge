@@ -1,2 +1,1 @@
-# interview
-Accumulation of the interview
+千里之行，始于足下。每天都学一点点。
