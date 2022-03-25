@@ -44,3 +44,5 @@ function tasksReducer(tasks, action) {
 ```
 const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 ```
+
+> #### 3.useEffect
