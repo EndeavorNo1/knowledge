@@ -54,15 +54,28 @@ import axios from 'axios';
 
 function App() {
   const [data, setData] = useState({ hits: [] });
-
-  useEffect(async () => {
+  //错误写法
+  useEffect(async () => { // useEffect这就是不允许在函数中直接使用 async 
     const result = await axios(
       'https://hn.algolia.com/api/v1/search?query=redux',
     );
 
     setData(result.data);
   },[]);
+ //正确写法
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'https://hn.algolia.com/api/v1/search?query=redux',
+      );
 
+      setData(result.data);
+    };
+
+    fetchData();
+  }, []);
+  
+  
   return (
     <ul>
       {data.hits.map(item => (
