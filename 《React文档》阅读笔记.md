@@ -45,4 +45,8 @@ function tasksReducer(tasks, action) {
 const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
 ```
 
-> #### 3.useEffect
+[useEffect完整指南](https://overreacted.io/a-complete-guide-to-useeffect/)
+==== 
+
+[How to fetch data with React Hooks](https://www.robinwieruch.de/react-hooks-fetch-data/)
+===
