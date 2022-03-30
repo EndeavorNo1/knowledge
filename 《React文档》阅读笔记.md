@@ -75,6 +75,27 @@ function App() {
     fetchData();
   }, []);
   
+  //加上loading和error
+    useEffect(() => {
+    const fetchData = async () => {
+      setIsError(false);
+      setIsLoading(true);
+
+      try {
+        const result = await axios(url);
+
+        setData(result.data);
+      } catch (error) {
+        setIsError(true);
+      }
+
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, [url]);
+
+  
   
   return (
     <ul>
