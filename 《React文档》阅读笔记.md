@@ -113,3 +113,5 @@ export default App;
 
 [How to fetch data with React Hooks](https://www.robinwieruch.de/react-hooks-fetch-data/)
 ===
+[How to useCallback in React](https://www.robinwieruch.de/react-usecallback-hook/)
+===
