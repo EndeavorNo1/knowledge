@@ -20,6 +20,7 @@
  |$git stash list|查看stash列表|
  |$git stash pop|弹出最新|
  |$git stash drop #stashversion|删除stash列表中的指定版本|
+ |$git stash save "xxx"|给stash添加注释|
 
   
   多人协作
