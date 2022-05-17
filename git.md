@@ -15,7 +15,12 @@
  |$git reset --hard HEAD^|develop上要拉取四个点，但之前commit一个点，拉不下来，撤销commit操作|
  |$git merge 分支名|合并另一分支的所有|
  |$git cherry-pick <commitHash>|将指定的提交（commit）应用于其他分支|
- |$ git cherry-pick A^..B|转移提交A---B|
+ |$git cherry-pick A^..B|转移提交A---B|
+ |$git stash|主要用于在开发中将不完整的修改进行缓存|
+ |$git stash list|查看stash列表|
+ |$git stash pop|弹出最新|
+ |$git stash drop #stashversion|删除stash列表中的指定版本|
+
   
   多人协作
   ```
