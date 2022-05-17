@@ -21,6 +21,8 @@
  |$git stash pop|弹出最新|
  |$git stash drop #stashversion|删除stash列表中的指定版本|
  |$git stash save "xxx"|给stash添加注释|
+ |$git stash clear|全清|
+ |$git stash apply stash@{0}|添加指定结点|
 
   
   多人协作
