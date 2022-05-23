@@ -76,7 +76,7 @@ interface Window {
 }
 
 const src = 'const a = "Hello World"';
-window.ts.transpileModule(src, {});
+window.ts.transpileModule(src, {});//没太懂，记一下
 ```
 ```
 type Window = {
