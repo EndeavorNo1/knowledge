@@ -65,3 +65,27 @@ bear.name;
 bear.honey;
         
 ```
+#### 4-1 添加字段interface可更改，type不可更改
+```
+interface Window {
+  title: string
+}
+
+interface Window {
+  ts: TypeScriptAPI
+}
+
+const src = 'const a = "Hello World"';
+window.ts.transpileModule(src, {});
+```
+```
+type Window = {
+  title: string
+}
+
+type Window = {
+  ts: TypeScriptAPI
+}
+
+ // Error: Duplicate identifier 'Window'.
+```
