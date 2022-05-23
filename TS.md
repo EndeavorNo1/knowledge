@@ -89,3 +89,16 @@ type Window = {
 
  // Error: Duplicate identifier 'Window'.
 ```
+### 5.bigint  & symbol
+JavaScript 中有一个原语用于通过函数创建全局唯一引用Symbol()：
+```
+const oneHundred: bigint = BigInt(100);
+
+const firstName = Symbol("name");
+const secondName = Symbol("name");
+ 
+if (firstName === secondName) {
+This condition will always return 'false' since the types 'typeof firstName' and 'typeof secondName' have no overlap.
+  // Can't ever happen
+}
+```
