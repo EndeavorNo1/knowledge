@@ -102,3 +102,25 @@ This condition will always return 'false' since the types 'typeof firstName' and
   // Can't ever happen
 }
 ```
+### 6.类型冲突
+```
+function padLeft(padding: number | string, input: string) {
+  if (typeof padding === "number") {
+    return " ".repeat(padding) + input;
+  }
+  return padding + input;
+}
+```
+### 7. 是否在范围内
+```
+type Fish = { swim: () => void };
+type Bird = { fly: () => void };
+ 
+function move(animal: Fish | Bird) {
+  if ("swim" in animal) {
+    return animal.swim();
+  }
+ 
+  return animal.fly();
+}
+```
