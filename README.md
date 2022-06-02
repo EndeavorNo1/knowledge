@@ -2,7 +2,7 @@
 学起来！！！！！！  
 遇到了感兴趣的项目是否应该不顾一切，去尝试改变？
 
-淘系前端团队。[https://fed.taobao.org/](https://fed.taobao.org/)
+- 淘系前端团队。[https://fed.taobao.org/](https://fed.taobao.org/)
 - 凹凸实验室。[https://jelly.jd.com/](https://jelly.jd.com/)
 - 腾讯IMWeb团队。[https://juejin.cn/user/764915822116382](https://juejin.cn/user/764915822116382)
 - 字节前端。[https://www.zhihu.com/org/zi-jie-qian-duan/posts](https://www.zhihu.com/org/zi-jie-qian-duan/posts)
