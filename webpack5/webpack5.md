@@ -4,3 +4,4 @@ webpack是一个静态资源打包工具，它会以一个或多个文件作为�
 - 开发模式：编译,打包后生成dist文件
 - 生产模式：编译+压缩JS代码
 ### 3.理论实践
+[webpack](https://webpack.js.org/)
