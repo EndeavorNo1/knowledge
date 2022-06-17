@@ -120,5 +120,6 @@ module.exports = {
         open:true//收否自动打开浏览器
     },
     //模式
-    mode:"development"
+    mode:"development",
+    devtool:"cheap-module-source-map"
 }
