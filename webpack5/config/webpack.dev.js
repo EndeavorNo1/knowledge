@@ -117,7 +117,8 @@ module.exports = {
     devServer:{
         host:"localhost",//启动服务器域名
         port:"2022",//启动服务器端口号
-        open:true//收否自动打开浏览器
+        open:true,//收否自动打开浏览器
+        hot:true//HMR开启
     },
     //模式
     mode:"development",

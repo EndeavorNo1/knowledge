@@ -9,3 +9,8 @@ import "./sass/index.scss";
 import "./stylus/index.styl"
 console.log(count(2,1))
 console.log(sum(1,2,3,4,5,6))
+
+if(module.hot){
+    //判断是否支持热模块替换
+    module.hot.accept("./js/count")
+}

@@ -5,6 +5,6 @@ webpack是一个静态资源打包工具，它会以一个或多个文件作为�
 - 生产模式：编译+压缩JS代码
 ### 3.理论实践
 [webpack](https://webpack.js.org/)
-sourceMap-查找到编译前的位置
-cheap-module-source-map(行映射)
-source-map（行+列映射）
+
+1. sourceMap-查找到编译前的位置----cheap-module-source-map(行映射)----source-map（行+列映射）
+2. HotModuleReplacement---提高打包构建速度,运行中增删改模块，不用替换或者加载整个模块的页面 vue-loader\react-hot-loader
