@@ -42,59 +42,63 @@ module.exports = {
     //加载器
     module:{
         rules:[
-            //loader的配置
-            {
-                test:/\.css$/,//检测css文件
-                use:getStyleLoader()
-            },
-            {
-                test:/\.less$/,
-                // loader:''//只能使用一个loader
-                use:getStyleLoader('less-loader')
-            },
-            {
-                test:/\.s[ac]ss$/,
-                // loader:''//只能使用一个loader
-                use:getStyleLoader('sass-loader')
-            },
-            {
-                test:/\.styl$/,
-                // loader:''//只能使用一个loader
-                use:getStyleLoader('stylus-loader')
-            },
-            {
-                test:/\.(png|jpe?g|gif|webp|svg)$/,//图片优化
-                type:"asset",
-                parser:{
-                    //小于50kb转base64
-                    //优点：减少请求数量，缺点：增加体积
-                    dataUrlCondition:{
-                        maxSize:10*1024
+          {
+              //每个文件只能被其中一个loader配置处理
+            oneOf:[
+                {
+                    test:/\.css$/,//检测css文件
+                    use:getStyleLoader()
+                },
+                {
+                    test:/\.less$/,
+                    // loader:''//只能使用一个loader
+                    use:getStyleLoader('less-loader')
+                },
+                {
+                    test:/\.s[ac]ss$/,
+                    // loader:''//只能使用一个loader
+                    use:getStyleLoader('sass-loader')
+                },
+                {
+                    test:/\.styl$/,
+                    // loader:''//只能使用一个loader
+                    use:getStyleLoader('stylus-loader')
+                },
+                {
+                    test:/\.(png|jpe?g|gif|webp|svg)$/,//图片优化
+                    type:"asset",
+                    parser:{
+                        //小于50kb转base64
+                        //优点：减少请求数量，缺点：增加体积
+                        dataUrlCondition:{
+                            maxSize:10*1024
+                        }
+                    },
+                    generator: {
+                        //输出图片名称
+                        //[hash:5]只取5位
+                        filename: 'static/images/[hash:5][ext][query]',
                     }
                 },
-                generator: {
-                    //输出图片名称
-                    //[hash:5]只取5位
-                    filename: 'static/images/[hash:5][ext][query]',
+                {
+                    test:/\.(ttf|woff2?|mp3|mp4|avi)$/,//字体标签
+                    type:"asset/resource",
+                    generator: {
+                        //输出图片名称
+                        //[hash:5]只取5位
+                        filename: 'static/media/[hash:5][ext][query]',
+                    }
+                },
+                {
+                    test: /\.js$/,
+                    exclude: /(node_modules)/,//排除的文件
+                    loader: 'babel-loader',
+                    // options: {
+                    // presets: ['@babel/preset-env']
+                    // }
                 }
-            },
-            {
-                test:/\.(ttf|woff2?|mp3|mp4|avi)$/,//字体标签
-                type:"asset/resource",
-                generator: {
-                    //输出图片名称
-                    //[hash:5]只取5位
-                    filename: 'static/media/[hash:5][ext][query]',
-                }
-            },
-            {
-                test: /\.js$/,
-                exclude: /(node_modules)/,//排除的文件
-                loader: 'babel-loader',
-                // options: {
-                // presets: ['@babel/preset-env']
-                // }
-            }
+               ]
+          }
         ]
     },
     //插件

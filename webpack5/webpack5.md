@@ -8,3 +8,4 @@ webpack是一个静态资源打包工具，它会以一个或多个文件作为�
 
 1. sourceMap-查找到编译前的位置----cheap-module-source-map(行映射)----source-map（行+列映射）
 2. HotModuleReplacement---提高打包构建速度,运行中增删改模块，不用替换或者加载整个模块的页面 vue-loader\react-hot-loader
+3. OneOf-每个文件只能被其中一个loader配置处理
