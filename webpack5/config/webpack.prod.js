@@ -78,7 +78,8 @@ module.exports = {
     plugins:[
         new ESLintPlugin({
             // 检测哪些文件
-            context:path.resolve(__dirname,"../src")
+            context:path.resolve(__dirname,"../src"),
+            exclude:"node_modules"
         }),
         new HtmlWebpackPlugin({
             // 模版：以public/index.html文件创建新的html文件

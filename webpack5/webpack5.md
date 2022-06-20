@@ -9,3 +9,10 @@ webpack是一个静态资源打包工具，它会以一个或多个文件作为�
 1. sourceMap-查找到编译前的位置----cheap-module-source-map(行映射)----source-map（行+列映射）
 2. HotModuleReplacement---提高打包构建速度,运行中增删改模块，不用替换或者加载整个模块的页面 vue-loader\react-hot-loader
 3. OneOf-每个文件只能被其中一个loader配置处理
+4. include/exclude-只处理/排除某些文件
+5. babel/eslint-缓存
+6. treeShaking-减少代码体积,webpack自带
+7. 减少babel体积代码@babel-transform-runtime:禁用了Babel自动对每个文件的runtime注入，而是引入。并且使室友的辅助代码从这里引入
+8. 减少图片体积 image-minimizer-webpack-plugin(无损压缩-npm install imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo -D
+/有损压缩-npm install imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo -D)
+9. 优化代码性能之代码分割和按需加载
