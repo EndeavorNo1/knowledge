@@ -188,6 +188,9 @@ module.exports = {
         splitChunks:{
             chunks:"all"
         },
+        runtimeChunk:{
+            name:(entrypoint) => `runtime~${entrypoint.name}.js`,
+        }
         // cacheGroups:{
         //     default:{
         //         minSize:0,

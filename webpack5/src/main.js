@@ -1,6 +1,7 @@
 import count from "./js/count";
 import sum from "./js/sum";
 import {add} from './js/main'
+import 'core-js'//包过大的话可以手动引入
 //想要webpack打包资源必须引入该资源
 import "./css/index.css";
 import "./css/iconfont.css"

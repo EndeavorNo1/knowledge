@@ -39,6 +39,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
+    "core-js": "^3.23.2",
     "stylus-loader": "^7.0.0"
   },
   "browserslist": [
