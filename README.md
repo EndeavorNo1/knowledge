@@ -20,3 +20,4 @@
 - 网易云音乐技术团队。[https://juejin.cn/column/6981408568612225055](https://juejin.cn/column/6981408568612225055)
 - react https://react.iamkasong.com/#%E5%AF%BC%E5%AD%A6%E8%A7%86%E9%A2%91
 - [微前端-umi](https://umijs.org/)
+- [微前端-qiankun](https://qiankun.umijs.org/zh/guide)
