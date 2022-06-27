@@ -24,3 +24,4 @@ webpack是一个静态资源打包工具，它会以一个或多个文件作为�
 12. Network Cache 对输出资源文件进行更好命名
 13. Core-js 专门用来做es6以上API的polyfill。解决新特性的兼容问题
 14. PWA 离线可以继续运行
+15. case-sensitive-paths-webpack-plugin
