@@ -124,5 +124,58 @@ function move(animal: Fish | Bird) {
   return animal.fly();
 }
 ```
+### 8. 部分-Partial<Type>
+```
+interface Todo {
+  title: string;
+  description: string;
+}
+ 
+function updateTodo(todo: Todo, fieldsToUpdate: Partial<Todo>) {
+  return { ...todo, ...fieldsToUpdate };
+}
+ 
+const todo1 = {
+  title: "organize desk",
+  description: "clear clutter",
+};
+ 
+const todo2 = updateTodo(todo1, {
+  description: "throw out trash",
+});
+```
+  
+### 9. 必须-Required<Type>
+```
+interface Props {
+  a?: number;
+  b?: string;
+}
+ 
+const obj: Props = { a: 5 };
+ 
+const obj2: Required<Props> = { a: 5 };
+```
+  
+### 10. 对象-Record<Keys, Type>
+```
+interface CatInfo {
+  age: number;
+  breed: string;
+}
+ 
+type CatName = "miffy" | "boris" | "mordred";
+ 
+const cats: Record<CatName, CatInfo> = {
+  miffy: { age: 10, breed: "Persian" },
+  boris: { age: 5, breed: "Maine Coon" },
+  mordred: { age: 16, breed: "British Shorthair" },
+};
+ 
+cats.boris;
+```
 
+
+
+ 
 https://yayujs.com/handbook/Generics.html#%E6%B3%9B%E5%9E%8B%E7%BA%A6%E6%9D%9F-generic-constraints
