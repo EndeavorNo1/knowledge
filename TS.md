@@ -174,8 +174,9 @@ const cats: Record<CatName, CatInfo> = {
  
 cats.boris;
 ```
-
-
+  
+### 11. input e节点 
+- e: React.ChangeEvent<HTMLInputElement>
 
  
 https://yayujs.com/handbook/Generics.html#%E6%B3%9B%E5%9E%8B%E7%BA%A6%E6%9D%9F-generic-constraints
