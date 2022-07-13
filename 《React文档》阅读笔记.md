@@ -124,3 +124,14 @@ export default App;
 ===
 
 
+将jsx转换成string html。
+```
+import ReactDOMServer from 'react-dom/server'
+
+const htmlString = ReactDOMServer.renderToStaticMarkup(
+    <div>
+         <Component/>
+         /* etc. */
+    </div>
+);
+```
