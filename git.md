@@ -4,6 +4,7 @@
  |$git add .|添加文件到暂存区|
  |$git commit -m "提交命令"|提交|
  |$git remote add origin 你github上的复制链接|连接|
+ |$git remote remove origin|git断开远程链接|
  |$git push -u  origin master|添加文件到项目|
  |$git clone -b 分支名称|拉去指定分支代码|
  |$git branch -a|查看所有分支|
