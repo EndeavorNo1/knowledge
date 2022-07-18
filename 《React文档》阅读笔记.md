@@ -136,3 +136,25 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 );
 ```
 [相同参数，解决重复请求问题](https://github.com/alexreardon/memoize-one)
+
+### 监听
+```
+function MyResponsiveComponent() {
+  const width = useWindowWidth(); // Our custom Hook
+  return (
+    <p>Window width is {width}</p>
+  );
+}
+
+function useWindowWidth() {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+  return width;
+}
+```
