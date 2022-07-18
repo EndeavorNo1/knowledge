@@ -135,3 +135,4 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
     </div>
 );
 ```
+[相同参数，解决重复请求问题](https://github.com/alexreardon/memoize-one)
