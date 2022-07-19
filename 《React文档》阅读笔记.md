@@ -158,3 +158,50 @@ function useWindowWidth() {
   return width;
 }
 ```
+### 钻石问题
+```
+function StatusMessage() {
+  const width = useWindowWidth();
+  const isOnline = useNetworkStatus();
+  return (
+    <>
+      <p>Window width is {width}</p>
+      <p>You are {isOnline ? 'online' : 'offline'}</p>
+    </>
+  );
+}
+
+function useSubscription(subscribe, unsubscribe, getValue) {
+  const [state, setState] = useState(getValue());
+  useEffect(() => {
+    const handleChange = () => setState(getValue());
+    subscribe(handleChange);
+    return () => unsubscribe(handleChange);
+  });
+  return state;
+}
+
+function useWindowWidth() {
+  const width = useSubscription(
+    handler => window.addEventListener('resize', handler),
+    handler => window.removeEventListener('resize', handler),
+    () => window.innerWidth
+  );
+  return width;
+}
+
+function useNetworkStatus() {
+  const isOnline = useSubscription(
+    handler => {
+      window.addEventListener('online', handler);
+      window.addEventListener('offline', handler);
+    },
+    handler => {
+      window.removeEventListener('online', handler);
+      window.removeEventListener('offline', handler);
+    },
+    () => navigator.onLine
+  );
+  return isOnline;
+}
+```
