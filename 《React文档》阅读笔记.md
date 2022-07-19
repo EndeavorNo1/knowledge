@@ -205,3 +205,5 @@ function useNetworkStatus() {
   return isOnline;
 }
 ```
+Hooks 的设计目标之一是避免在高阶组件和渲染道具中普遍存在的深度嵌套的函数式样式。
+[钩子规则](https://reactjs.org/docs/hooks-rules.html)
