@@ -209,3 +209,22 @@ Hooks 的设计目标之一是避免在高阶组件和渲染道具中普遍存�
 [钩子规则](https://reactjs.org/docs/hooks-rules.html). 
 
 [黄金](https://www.robinwieruch.de/blog/)
+
+### ref+ts
+```
+import * as React from 'react';
+
+function App() {
+  const ref = React.useRef<HTMLInputElement>(null);
+
+  React.useEffect(() => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  }, []);
+
+  return <input ref={ref} />;
+}
+
+export default App;
+```
