@@ -306,3 +306,40 @@ const App = () => {
 export default App;
 ```
 ### [useContext](https://www.robinwieruch.de/react-usecontext-hook/)
+
+### 目录结构
+```
+- src/
+--- feature/
+----- User/
+------- Profile/
+------- Avatar/
+----- Message/
+------- MessageItem/
+------- MessageList/
+----- Payment/
+------- PaymentForm/
+------- PaymentWizard/
+------- services/
+--------- Currency/
+----------- index.js
+----------- service.js
+----------- test.js
+----- Error/
+------- ErrorMessage/
+------- ErrorBoundary/
+------- services/
+--------- ErrorTracking/
+----------- index.js
+----------- service.js
+----------- test.js
+--- components/
+--- hooks/
+--- context/
+--- services/
+----- Format/
+------- Date/
+--------- index.js
+--------- service.js
+--------- test.js
+```
