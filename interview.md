@@ -11,6 +11,9 @@
 - [ ] babel原理，如何写babel插件
 - [ ] 如何设计一个沙盒sandbox
 - [ ] webpack 的缺点，让你设计⼀个新的构建打包⼯具，你会怎么设计
+- [ ] 讲讲 webpack 的性能优化
+- [ ] 有写过 plugin
+- [ ] 了解 webpack-dev-server 的 HMR 实现原理吗
 
 ### 小程序
 - [ ] 小程序API做了什么处理，能够做到全局变量的隐藏
@@ -32,6 +35,19 @@
 - [ ] http 与 tcp 的关系
 - [ ] tcp 可以建立多个连接吗？
 - [ ] 介绍一下为什么要有 三次握手，四次挥手
+- [ ] http 的 get 和 post 区别
+- [ ] 缓存策略
+- [ ] https 的握手过程
+- [ ] http2 的特点
+
+### es6 or js
+
+- [ ] weak-Set、weak-Map 和 Set、Map 区别
+- [ ] mvvm 模型和 mvc 模型区别
+- [ ] 如何实现一个 mvvm 模型
+- [ ] 为何你用 mobx 重构了 saga，说说两者之间的区别
+- [ ] 说说 vnode 的了解
+- [ ] 手写一下防抖和节流
 
 ### node
 - [ ] 会node 吗？
