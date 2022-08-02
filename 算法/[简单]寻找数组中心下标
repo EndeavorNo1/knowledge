@@ -1,0 +1,30 @@
+[寻找数组中心下标](https://leetcode.cn/problems/find-pivot-index/)
+```
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var pivotIndex = function(nums) {
+    let keyArr = []
+    // 记录指针
+    nums.map((_itm,idx)=>{
+        // 分为左数组和右数组
+        let leftArr = nums.slice(0,idx)
+        let rightArr = nums.slice(idx+1,nums.length)
+        // 判断是否为key
+        if(sumArr(leftArr)===sumArr(rightArr)){
+            keyArr.push(idx)
+        }
+    })
+    return keyArr[0] ?? -1
+};
+
+// 数组求和
+var sumArr = function(arrs){
+    if(arrs.length===0){
+        return 0
+    }else{
+        return arrs.reduce((prev,next)=>{return prev+next},0)
+    }  
+}
+```
