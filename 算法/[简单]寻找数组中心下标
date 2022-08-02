@@ -28,3 +28,6 @@ var sumArr = function(arrs){
     }  
 }
 ```
+
+小Q：
+本来用的foreach，太慢没过，改的map过了= =
