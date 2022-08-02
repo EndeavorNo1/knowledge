@@ -30,4 +30,20 @@ var sumArr = function(arrs){
 ```
 
 小Q：
-本来用的foreach，太慢没过，改的map过了= =
+本来用的foreach，太慢没过，改的map过了= =，费时，1108 ms	48.8 MB
+换一种呢
+
+```
+var pivotIndex = function(nums) {
+    const total = nums.reduce((a, b) => a + b, 0);
+    let sum = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (2 * sum + nums[i] === total) {
+            return i;
+        }
+        sum += nums[i];
+    }
+    return -1;
+};
+```
+56 ms	43 MB = = 算总和，然后减去半边 果然快很多， total-num-leftSum = rightSum,左右相等的话：leftSum*2+num = total
