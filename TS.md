@@ -251,3 +251,7 @@ todo;
  ### 19. InstanceType<Type>-类型构造
  
 https://yayujs.com/handbook/Generics.html#%E6%B3%9B%E5%9E%8B%E7%BA%A6%E6%9D%9F-generic-constraints
+ ### 20. e.target.value的ts
+  ```
+  onBlur={(e: React.ChangeEvent<HTMLInputElement>) => {}
+  ```
