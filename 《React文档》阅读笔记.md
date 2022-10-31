@@ -344,3 +344,17 @@ export default App;
 --------- test.js
 ```
 [recoil](https://www.recoiljs.cn/docs/introduction/getting-started)
+
+```
+  // 重置
+  const ndpFormRef = useRef<FormRef<unknown>>()
+  // 前后对比
+  useEffect(() => {
+    if (a !== previewId.current) {
+      ndpFormRef.current!.reset()
+    }
+    return () => {
+      previewId.current = previewId
+    }
+  }, [subMenuId])
+```
