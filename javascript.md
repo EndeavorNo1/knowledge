@@ -12,4 +12,11 @@ var x = 1;
     const 常量，不可变
     let 同一作用域，重复声明抛错 暂时性死区
     var 不受块级作用域限制，声明提升
+    
+    let name = 42
+    console.log(typeof name)//number
+    
+    var name = 42(跟window对象重合，取window对象类型)
+    console.log(typeof name)//string
+    
 ```
