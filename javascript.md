@@ -4,9 +4,9 @@ var x = 1;
     console.log(x);
     var x = 2;
 })()
-
+//-- undefined
 ```
--- undefined
+
 > var let const
 ```
     const 常量，不可变
@@ -19,4 +19,11 @@ var x = 1;
     var name = 42(跟window对象重合，取window对象类型)
     console.log(typeof name)//string
     
+```
+> js with()严格模式下不可用
+```
+let obj={name:'huahua',age:18}
+//undefined
+with(obj){console.log(name,age)}
+// huahua 18
 ```
