@@ -27,3 +27,15 @@ let obj={name:'huahua',age:18}
 with(obj){console.log(name,age)}
 // huahua 18
 ```
+> 函数默认值也可以是函数，但前面的实参不可为undefined
+```
+const baga = (name,func=func()) => {
+    //code
+}
+```
+> 行参数量-arity
+```
+const bbq = (a,b) => {
+    console.log(bbq.length)//2
+}
+```
