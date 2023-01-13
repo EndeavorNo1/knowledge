@@ -76,4 +76,10 @@ class 子 extends 父 {}
    const obj={example(){//...}}
 ```
 > super 方法与原始对象建立链接
-> 
+> 迭代器 
+```
+    //1 for of
+    const a = ["a","b","c"]
+    for( const v of a){console.log(v)}//1 2 3
+
+```
