@@ -32,6 +32,7 @@ with(obj){console.log(name,age)}
 const baga = (name,func=func()) => {
     //code
 }
+// 使用默认值就不用再加个if语句判断了
 ```
 > 行参数量-arity
 ```
@@ -39,3 +40,25 @@ const bbq = (a,b) => {
     console.log(bbq.length)//2
 }
 ```
+> 类和类表达式
+```
+class 子 extends 父 {}
+```
+> 对象方法
+```
+//1. 除一下2个，其余与===一致
+    Object.is(+0,-0)//false
+    Object.is(NaN,NaN)//true
+//2. 
+    let obj = {
+        a:1,
+        b:2,
+        c:3
+    }
+    let arr = [["a",1],["b",2],["c",3]]
+    Object.keys(obj)// ES5- ['a', 'b', 'c']
+    Object.values(obj)// ES7- [1, 2, 3]
+    Object.entries(obj)//  ES7-[["a",1],["b",2],["c",3]]
+    Object.fromEntries(arr)// ES9-{a:1,b:2,c:3} 与entries相对，也可以将Map类型转为对象Map.prototype.entries返回的参数恰好是Object.fromEntries的参数
+```
+       
