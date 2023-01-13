@@ -61,4 +61,19 @@ class 子 extends 父 {}
     Object.entries(obj)//  ES7-[["a",1],["b",2],["c",3]]
     Object.fromEntries(arr)// ES9-{a:1,b:2,c:3} 与entries相对，也可以将Map类型转为对象Map.prototype.entries返回的参数恰好是Object.fromEntries的参数
 ```
-       
+> 对象属性顺序
+```
+    // 对象的属性顺序，字符串根据，证书索引
+    // 其他字符串类型的键，按照创建顺序
+    // ES2020之后增加了属性顺序
+    // 属性顺序当前性能还不稳定，不建议以来
+```
+> 对象简写方法
+```
+   // 旧的
+   const obj={example:function(){//...}}
+   // 新的
+   const obj={example(){//...}}
+```
+> super 方法与原始对象建立链接
+> 
