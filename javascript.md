@@ -83,3 +83,18 @@ class 子 extends 父 {}
     for( const v of a){console.log(v)}//1 2 3
 
 ```
+> 解构
+```
+    // 数组解构
+    const arr = [1,2]
+    const [first,second] = arr
+    console.log(first,second)//1,2
+    // 默认值解构
+    const obj = {f1:3,d2:2}
+    const {ts3 = 3} = obj
+    console.log(ts3) // 3
+    //默认值计算
+    const {f1,d2,ts3,c4 = f1*4} =obj
+    console.log(c4) // 12
+    
+```
