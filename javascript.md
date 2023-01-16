@@ -124,3 +124,14 @@ class 子 extends 父 {}
         console.log(value)
     }
 ```
+> 字符串方法
+```
+    console.log("n".repeat(3))//nnn
+    console.log("capite".startsWith("ca"))//true
+    console.log("capite".endssWith("tea"))//false
+    console.log("capite".includes("cap"))//true
+    console.log("capite".padEnd(20,'-*'))//capite-*-*-*-*-*-*-*
+    console.log("capite".padStart(20))//'              capite'
+    console.log("  trim   ".trimStart())//'trim   '
+    console.log("  trim   ".trimEnd())//'  trim'
+```
