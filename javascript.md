@@ -96,5 +96,17 @@ class 子 extends 父 {}
     //默认值计算
     const {f1,d2,ts3,c4 = f1*4} =obj
     console.log(c4) // 12
-    
+    // rest,必须在最后
+    const obj1 = {a:1,b:2,c:3,d:4,e:5}
+    const {a,...rest} = obj1
+    console.log(a,rest)//1 {b: 2, c: 3, d: 4, e: 5}
+    // 数组对象遍历
+    const arr3=[
+        {name:"one",value:"1"},
+        {name:"two",value:"2"},
+        {name:"three",value:"3"}
+        ]
+    for(const {name,value} of arr3 ){
+        console.log(name,value)
+    }//one 1 two 2 three 3
 ```
