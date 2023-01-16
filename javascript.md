@@ -110,3 +110,17 @@ class 子 extends 父 {}
         console.log(name,value)
     }//one 1 two 2 three 3
 ```
+> async await 并行写法
+```
+    const fetchJSON = async (url) => {
+        const res = await fetch(url)
+        return res.data
+    }
+    const data = await Promise.all([fetchJSON('a'),fetchJSON('b'),fetchJSON('c')])
+```
+> for await of
+```
+    for await ( const value of fetchInSeries("a_url","b_url","c_url")){
+        console.log(value)
+    }
+```
