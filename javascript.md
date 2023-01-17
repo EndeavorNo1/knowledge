@@ -135,6 +135,14 @@ class 子 extends 父 {}
     console.log("  trim   ".trimStart())//'trim   '
     console.log("  trim   ".trimEnd())//'  trim'
 ```
+> 微调
+```
+   const val = this.num ?? 300 //不是 null undefind，就取300
+   //旧
+   const x = some && some.deeply && some.deeply.nested && some.deeply.nested.value
+   //ES2020-新
+   const y = some?.deeply?.nested?.value
+```
 ======
 以上记录均来源于
 ![深入理解现代javascript](https://user-images.githubusercontent.com/31230553/212852518-7d6cb26f-be4f-4199-9ebe-dcd5505c103a.jpeg)
