@@ -135,3 +135,6 @@ class 子 extends 父 {}
     console.log("  trim   ".trimStart())//'trim   '
     console.log("  trim   ".trimEnd())//'  trim'
 ```
+======
+以上记录均来源于
+![深入理解现代javascript](https://user-images.githubusercontent.com/31230553/212852518-7d6cb26f-be4f-4199-9ebe-dcd5505c103a.jpeg)
