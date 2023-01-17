@@ -46,7 +46,7 @@ class 子 extends 父 {}
 ```
 > 对象方法
 ```
-//1. 除一下2个，其余与===一致
+//1. 除以下2个，与===一致
     Object.is(+0,-0)//false
     Object.is(NaN,NaN)//true
 //2. 
