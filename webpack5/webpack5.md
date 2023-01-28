@@ -25,3 +25,8 @@ webpack是一个静态资源打包工具，它会以一个或多个文件作为�
 13. Core-js 专门用来做es6以上API的polyfill。解决新特性的兼容问题
 14. PWA 离线可以继续运行
 15. case-sensitive-paths-webpack-plugin
+#### 五、如何封装plugin
+插件基本条件：
+- 1.要是一个类。
+- 2.要有一个apply函数
+- 3.要调用complier API来影响打包结果
