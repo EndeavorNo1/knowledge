@@ -359,7 +359,7 @@ export default App;
   }, [subMenuId])
 ```
 #### 库
-[SWR](https://swr.vercel.app/zh-CN)
+[SWR](https://swr.vercel.app/zh-CN/docs/getting-started)
 ```
 import useSWR from 'swr'
 
