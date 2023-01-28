@@ -371,3 +371,25 @@ function Profile() {
   return <div>hello {data.name}!</div>
 }
 ```
+#### react中Suspense优化
+```
+const OtherComponent = React.lazy(() => import('./OtherComponent'));
+const AnotherComponent = React.lazy(() => import('./AnotherComponent'));
+ 
+function MyComponent() {
+ return (
+  <div>
+   <Suspense fallback={<div>Loading...</div>}>
+    <section>
+     <OtherComponent />
+     <AnotherComponent />
+    </section>
+   </Suspense>
+  </div>
+ );
+}
+// OtherComponent是通过懒加载加载进来的，所以渲染页面的时候可能会有延迟，但使用了Suspense之后，可优化交互。
+// 在<OtherComponent />外面使用Suspense标签，并在fallback中声明OtherComponent加载完成前做的事，即可优化整个页面的交互
+
+```
+  
