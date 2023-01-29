@@ -40,3 +40,24 @@ url?: string;    // 用于请求的服务器 URL
  proxy?: AxiosProxyConfig | false;
  cancelToken?: CancelToken;  // 指定用于取消请求的 cancel token
 ```
+#### axios新写法
+ axios.create()是添加了自定义配置的新的axios
+```
+ //旧版
+ axios({
+	 method:'POST',
+	 url:'http://localhost:8080/login',
+ 	data
+})
+//新版
+cosnt instance = axios.create({
+    baseURL:'http://localhost:8080/' //基础路径
+})
+
+instance({
+	url: '/login',
+    method: 'POST',
+    data: res
+})
+// 1.可以简化路径写法 2.当基础路径发生变化时方便修改，有利于维护
+```
