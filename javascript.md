@@ -159,5 +159,6 @@ push() 方法可向数组的末尾添加一个或多个元素，并返回新的�
 
 ```
 
+<img width="415" alt="截屏2023-02-23 下午5 54 55" src="https://user-images.githubusercontent.com/31230553/220874614-bbc337c5-a91b-47bf-a00d-2e359a51f589.png">
 
-<img width="502" alt="截屏2023-02-20 下午1 58 26" src="https://user-images.githubusercontent.com/31230553/220874501-248fd9d6-f53e-4316-94e3-4de87038dcc4.png">
+
