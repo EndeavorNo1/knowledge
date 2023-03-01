@@ -392,4 +392,31 @@ function MyComponent() {
 // 在<OtherComponent />外面使用Suspense标签，并在fallback中声明OtherComponent加载完成前做的事，即可优化整个页面的交互
 
 ```
+### React.Children
+React.children有5个方法：
+- React.Children.map()
+- React.Children.forEach()
+- React.Children.count()
+- React.Children.only()
+- React.Children.toArray()，通常与React.cloneElement()结合使用
+```
+  <Father>
+        <div>我是老大</div>
+        <div>我是老二</div>
+  </Father>
   
+  
+const Father: FC = ({ children }) => {
+  console.log('children', children)
+  return (
+    <div>
+      我在外
+      {React.Children.map(children, (child, index) => {
+        if (index === 1) {
+          return child
+        }
+      })}
+    </div>
+  )
+}
+```
