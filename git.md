@@ -52,7 +52,7 @@
  ----------
 ### 相关链接
 [git rebase 和 git merge 的区别](https://www.jianshu.com/p/4079284dd970?u_atoken=26add996-d97e-4e6d-aedb-b2d4344f362e&u_asession=01jKR8TweGslFoZ5rPMpLm0jj-MeCtr5Gw5uVgff8k6rbt6nxB_LQ2l6Au5ERQdtO2X0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K8s8HahI665WI14KuoF22ipPpcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&u_asig=05OmlONVrTf5sD-EHkaBLATD-lQyn3NM_zsCwy0HGbeOjxA-ZpV9-QNk_4HiGC8c06Kf8hoReEHf7J-9n1Tbln7X-o51wsvn3SaZ5V4OnTkvvxVbRxADyW2Jf0BOnwdu7a09GgBZnKvms13rmCAqchTDrCkKuO5-v3U0hD7CQJHxH9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzUZzPnMD45z9d-43RtNiOjnKiczyrp1dP4Fy5X5KxZEgWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W-uHkX0eyDbnCs2JawIIRm_9CZdKG5Jxn3tSLIwaLj6FCjx7QBjm0seluuX8fD4K8Tocsb9pUnCVNZ7Tk8a6IFnmWspDxyAEEo4kbsryBKb9Q&u_aref=UIVLKMhCH3astiZSGIk3F1iLYWI%3D)
-when you encounter the following problem
+##### when you encounter the following problem
 - 1.fatal: unable to connect to github.com
   ```
   vim ~/.gitconfig //then delete all [instead of]
